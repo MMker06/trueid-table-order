@@ -1,0 +1,48 @@
+# ── 시크릿 — 절대 커밋 금지 ──────────────────
+.env
+backend/.env
+**/*.env
+!backend/.env.example
+*.pem
+*.key
+
+# ── Python ──────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# ── 업로드 / 런타임 산출물 ───────────────────
+backend/uploads/
+
+# ── AI 모델 가중치 (용량 큼, 별도 다운로드) ──
+*.pt
+*.pth
+*.onnx
+ai/weights/
+backend/app/services/id_verification/weights/
+
+# ── Flutter ─────────────────────────────────
+table-order-app/.dart_tool/
+table-order-app/build/
+table-order-app/.flutter-plugins
+table-order-app/.flutter-plugins-dependencies
+table-order-app/ios/Flutter/ephemeral/
+table-order-app/.vercel/
+table-order-app/*.iml
+
+# ── DB ──────────────────────────────────────
+*.db
+*.sqlite3
+
+# ── IDE / OS ────────────────────────────────
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ── Windows 다운로드 잔재 ────────────────────
+*:Zone.Identifier
